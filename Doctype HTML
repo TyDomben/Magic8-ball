@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <script src="Magic8-Ball.js"></script> <!-- Link to your JavaScript file -->
+    <style>
+        /* Add some basic styling */
+        #response {
+            margin-top: 20px;
+            font-size: 24px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weighted Magic 8 Ball</h1>
+    <button onclick="showResponse()">Ask the Magic 8 Ball</button>
+    <div id="response"></div>
+
+    <script>
+        // This script tag can contain your JavaScript code or link to an external JS file
+        function showResponse() {
+            const response = weightedMagic8Ball(); // Call your Magic 8 Ball function
+            document.getElementById('response').innerText = response; // Display the response
+        }
+    </script>
+</body>
+</html>
